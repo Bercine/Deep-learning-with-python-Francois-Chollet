@@ -1,0 +1,44 @@
+Chapitre 5 
+- k-fold validation
+- The manifold hypothesis
+- Interpolation as a source of generalization
+- Manifold interpolation
+- Regularization
+- L1 regularization
+- L2 regularization
+- Dropout (Geoffrey Hinton) is a kind of regularization 
+- The fundamental problem in machine learning is the tension between optimization
+and generalization
+
+Chapitre 8
+- le CNN est meilleur que le Dense Neural Network : 99% de précision contre 97% pour le Dense, 2% de perte contre 6% pour le Dense
+- c'est lié au fait qu'un CNN a une vision locale dans l'image, il peut voir ce qu'il y a autour d'un point et peut donc reconnaître un 
+pattern n'importe où dans l'image; a contrario un Dense layer n'apprend que par point, et ne peut pas reconnaitre un pattern s'il se 
+trouve à un endroit différent. en fait, si on prend une analogie avec un jeu vidéo, c'est comme si le CNN avait la map du jeu 
+pour se situer, alors que le dense layer avance au fur et à mesure sans savoir ce qu'il y a autour de lui.
+- stride
+- convolution operation
+- maxpooling operation
+- Le pooling (ou les strides) est nécessaire pour réduire progressivement la taille spatiale des feature maps. 
+  C'est ce qui rend le CNN efficace. Sans ça, le modèle explose en taille et en complexité.
+- Understanding TensorFlow Dataset objects
+- ModelCheckpoint permet de surveiller l'overfitting et de sauvegarder la meilleure version du modèle
+- data augmentation : La data augmentation et le dropout ne s'activent qu'à l'entraînement pour lutter contre l'overfitting, 
+mais ne créent pas de nouvelles informations
+- VGG, ResNet, Inception, Xception (Computer vision)
+- There are two ways to use a pretrained model: feature extraction and fine-tuning.
+- 8.3.2 Fine-tuning a pretrained model
+
+Chapitre 8
+This chapter covers
+- The different branches of computer vision: image 
+classification, image segmentation, object 
+detection
+- Modern convnet architecture patterns: residual 
+connections, batch normalization, depthwise 
+separable convolutions
+- Techniques for visualizing and interpreting what 
+convnets learn
+
+
+
